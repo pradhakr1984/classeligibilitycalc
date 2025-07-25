@@ -191,7 +191,7 @@ export function getEligibility(
     
     // Initialize variables
     let match = null;
-    let flags: string[] = [];
+    const flags: string[] = [];
     
     // Add flag for future birth dates
     if (isFutureBirth) {
@@ -248,8 +248,8 @@ export function getEligibility(
   });
 
   // Initialize variables
-  let match = results.find(r => r.eligible) || null;
-  let flags: string[] = [];
+  const match = results.find(r => r.eligible) || null;
+  const flags: string[] = [];
 
   // Add flag for future birth dates
   if (isFutureBirth) {
